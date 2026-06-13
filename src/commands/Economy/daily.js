@@ -65,7 +65,7 @@ export default {
                     DAILY_AMOUNT * PREMIUM_BONUS_PERCENTAGE,
                 );
                 earned += bonusAmount;
-                bonusMessage = `\n✨ **Premium Bonus:** +$${bonusAmount.toLocaleString()}`;
+                bonusMessage = `\n✨ **Premium Bonus:** +₲${bonusAmount.toLocaleString()}`;
                 hasPremiumRole = true;
             }
 
@@ -85,11 +85,11 @@ export default {
 
             const embed = successEmbed(
                 "✅ Daily Claimed!",
-                `You have claimed your daily **$${earned.toLocaleString()}**!${bonusMessage}`
+                `You have claimed your daily **₲${earned.toLocaleString()}**!${bonusMessage}`
             )
                 .addFields({
                     name: "New Cash Balance",
-                    value: `$${userData.wallet.toLocaleString()}`,
+                    value: `₲${userData.wallet.toLocaleString()}`,
                     inline: true,
                 })
                 .setFooter({
