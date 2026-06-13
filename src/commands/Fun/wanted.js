@@ -52,7 +52,7 @@ export default {
       const bountyAmount = Math.floor(
         Math.random() * (100000000 - 1000000) + 1000000,
       );
-      const bounty = `$${bountyAmount.toLocaleString()} `;
+      const bounty = `$ ${bountyAmount.toLocaleString()} `;
 
       const embed = createEmbed({
         color: 'primary',
