@@ -14,9 +14,9 @@ const JAIL_TIME = 2 * 60 * 60 * 1000;
 const CRIME_TYPES = [
     { name: "Pickpocketing", min: 100, max: 500, risk: 0.3 },
     { name: "Burglary", min: 300, max: 1000, risk: 0.4 },
-    { name: "Smuggling", min: 1000, max: 5000, risk: 0.6 },
-    { name: "Sold an Organ", min: 2000, max: 10000, risk: 0.7 },
-    { name: "Sold an Orphan", min: 5000, max: 20000, risk: 0.8 },
+    { name: "smuggling", min: 1000, max: 5000, risk: 0.6 },
+    { name: "sold-an-organ", min: 2000, max: 10000, risk: 0.7 },
+    { name: "sold-an-orphan", min: 5000, max: 20000, risk: 0.8 },
 ];
 
 export default {
