@@ -31,9 +31,9 @@ export default {
                 .addChoices(
                     { name: 'Pickpocketing', value: 'pickpocketing' },
                     { name: 'Burglary', value: 'burglary' },
-                    { name: 'Smuggling', value: 'bank-heist' },
-                    { name: 'Sold an Organ', value: 'art-theft' },
-                    { name: 'Sold an Orphan', value: 'cybercrime' },
+                    { name: 'Smuggling', value: 'smuggling' },
+                    { name: 'Sold an Organ', value: 'sold-an-organ' },
+                    { name: 'Sold an Orphan', value: 'sold-an-orphan' },
                 )
         ),
 
