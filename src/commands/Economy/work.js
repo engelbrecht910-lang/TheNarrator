@@ -10,16 +10,16 @@ const MIN_WORK_AMOUNT = 50;
 const MAX_WORK_AMOUNT = 300;
 const LAPTOP_MULTIPLIER = 1.5;
 const WORK_JOBS = [
-    "Software Developer",
-    "Barista",
-    "Janitor",
-    "YouTuber",
-    "Discord Bot Developer",
-    "Cashier",
-    "Pizza Delivery Driver",
-    "Librarian",
-    "Gardener",
-    "Data Analyst",
+    "Blacksmith",
+    "Tailor",
+    "Baker",
+    "Street Sweeper",
+    "Squire",
+    "Crier",
+    "Carpenter",
+    "Cultist",
+    "Alchemist",
+    "Butcher",
 ];
 
 export default {
@@ -78,7 +78,7 @@ export default {
             let multiplierMessage = "";
             if (hasLaptop > 0) {
                 earned = Math.floor(earned * LAPTOP_MULTIPLIER);
-                multiplierMessage = "\n💻 **Laptop Bonus:** +50% earnings!";
+                multiplierMessage = "\n🔨 **Tools:** +50% earnings!";
             }
 
             userData.wallet = (userData.wallet || 0) + earned;
@@ -98,13 +98,13 @@ export default {
             });
 
             const embed = successEmbed(
-                "💼 Work Complete!",
-                `You worked as a **${job}** and earned **$${earned.toLocaleString()}**!${multiplierMessage}`
+                "⚒️ Work Complete!",
+                `You worked as a **${job}** and earned **₲${earned.toLocaleString()}**!${multiplierMessage}`
             )
                 .addFields(
                     {
                         name: "💰 New Balance",
-                        value: `$${userData.wallet.toLocaleString()}`,
+                        value: `₲${userData.wallet.toLocaleString()}`,
                         inline: true,
                     },
                     {
