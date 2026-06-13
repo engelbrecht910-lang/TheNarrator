@@ -61,7 +61,7 @@ export default {
         fields: [
           {
             name: "DEAD OR ALIVE",
-            value: `**BOUNTY:** ₲{bounty}`,
+            value: `**BOUNTY:** ₲ {bounty}`,
             inline: false,
           },
         ],
