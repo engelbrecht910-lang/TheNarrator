@@ -5,7 +5,7 @@ import { withErrorHandling, createError, ErrorTypes } from '../../utils/errorHan
 import { logger } from '../../utils/logger.js';
 import { InteractionHelper } from '../../utils/interactionHelper.js';
 
-const SLUT_COOLDOWN = 0 * 0 * 1000;
+const SLUT_COOLDOWN = 0 * 0 * 0;
 
 const SLUT_ACTIVITIES = [
     { name: "Alleyway Quicky", min: 120, max: 450, risk: 0.2 },
