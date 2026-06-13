@@ -32,7 +32,7 @@ export default {
       const crimeRaw = interaction.options.getString("crime");
 
       
-      let crime = "Too adorable for this server.";
+      let crime = "Fucked Around and Found Out.";
       if (crimeRaw) {
         const sanitizedCrime = sanitizeInput(crimeRaw.trim(), 100);
         if (sanitizedCrime.length > 0) {
@@ -52,7 +52,7 @@ export default {
       const bountyAmount = Math.floor(
         Math.random() * (100000000 - 1000000) + 1000000,
       );
-      const bounty = `$ ${bountyAmount.toLocaleString()} `;
+      const bounty = `₲ ${bountyAmount.toLocaleString()} `;
 
       const embed = createEmbed({
         color: 'primary',
