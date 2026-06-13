@@ -8,36 +8,36 @@ import { InteractionHelper } from '../../utils/interactionHelper.js';
 const SLUT_COOLDOWN = 45 * 60 * 1000;
 
 const SLUT_ACTIVITIES = [
-    { name: "Cam Stream", min: 120, max: 450, risk: 0.2 },
-    { name: "Private Dance Session", min: 220, max: 700, risk: 0.25 },
-    { name: "After-Hours Club Host", min: 320, max: 900, risk: 0.3 },
-    { name: "VIP Companion Booking", min: 550, max: 1400, risk: 0.35 },
-    { name: "Exclusive Livestream", min: 850, max: 2200, risk: 0.4 },
+    { name: "Alleyway Quicky", min: 120, max: 450, risk: 0.2 },
+    { name: "After War Booty Call", min: 220, max: 700, risk: 0.25 },
+    { name: "The Tavern Special", min: 320, max: 900, risk: 0.3 },
+    { name: "Lords Secret", min: 550, max: 1400, risk: 0.35 },
+    { name: "The Noble Treatment", min: 850, max: 2200, risk: 0.4 },
 ];
 
 const POSITIVE_OUTCOMES = [
-    "Your stream blew up and tips poured in.",
-    "A VIP booking paid far above average.",
-    "Your after-hours shift was packed and profitable.",
-    "Premium requests came through and your payout jumped.",
+    "Your Patron just got some extra coin guess its yours now.",
+    "A Special booking and what a payout.",
+    "I guess you can do more than just the avarage nun then.",
+    "They say you have gold between your thighs.",
 ];
 
 const FINE_OUTCOMES = [
-    "Venue security issued a compliance fine.",
-    "A moderation strike triggered a platform fee.",
-    "You were flagged and had to pay a penalty.",
+    "The Kingdom demands your taxes slut.",
+    "Guess the guards caught you with you pants down pay the bribe.",
+    "You thought you could slut for free pay your fine.",
 ];
 
 const ROBBED_OUTCOMES = [
-    "A fake buyer chargeback wiped part of your earnings.",
-    "A scam booking cleaned out a chunk of your cash.",
-    "You got baited by a fraud account and lost money.",
+    "Another slut stole you coin.",
+    "Can't trust a thief not even if your providing them a service.",
+    "You got scammed by a snake oil merchant.",
 ];
 
 const LOSS_OUTCOMES = [
-    "The set flopped and you had to cover operating costs.",
-    "You burned budget on prep and made no return.",
-    "The shift went sideways and left you in the red.",
+    "The local priest started praying for you in the street scaring off you clients.",
+    "The guards threw you in jail.",
+    "You forgot how to do the deed, poor thing.",
 ];
 
 function randomInt(min, max) {
