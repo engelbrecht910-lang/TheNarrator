@@ -52,7 +52,7 @@ export default {
       const bountyAmount = Math.floor(
         Math.random() * (100000000 - 1000000) + 1000000,
       );
-      const bounty = `$${bountyAmount.toLocaleString()} USD`;
+      const bounty = `$${bountyAmount.toLocaleString()} Gold`;
 
       const embed = createEmbed({
         color: 'primary',
@@ -61,7 +61,7 @@ export default {
         fields: [
           {
             name: "DEAD OR ALIVE",
-            value: `**BOUNTY:** ${bounty}`,
+            value: `**BOUNTY:** ₲{bounty}`,
             inline: false,
           },
         ],
