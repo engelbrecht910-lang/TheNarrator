@@ -68,7 +68,7 @@ export default {
                     embeds: [
                         MessageTemplates.ERRORS.INVALID_INPUT(
                             "deposit amount",
-                            `You tried to deposit more than you have. Depositing your remaining cash: **$${depositAmount.toLocaleString()}**`
+                            `You tried to deposit more than you have. Depositing your remaining cash: **₲${depositAmount.toLocaleString()}**`
                         )
                     ],
                     flags: ["Ephemeral"],
@@ -81,7 +81,7 @@ export default {
                 throw createError(
                     "Bank is full",
                     ErrorTypes.VALIDATION,
-                    `Your bank is currently full (Max Capacity: $${maxBank.toLocaleString()}). Purchase a **Bank Upgrade** to increase your limit.`,
+                    `Your bank is currently full (Max Capacity: ₲${maxBank.toLocaleString()}). Purchase a **Bank Upgrade** to increase your limit.`,
                     { maxBank, currentBank: userData.bank, userId }
                 );
             }
@@ -95,7 +95,7 @@ export default {
                         embeds: [
                             MessageTemplates.ERRORS.INVALID_INPUT(
                                 "deposit amount",
-                                `You only had space for **$${depositAmount.toLocaleString()}** in your bank account (Max: $${maxBank.toLocaleString()}). The rest remains in your cash.`
+                                `You only had space for **₲${depositAmount.toLocaleString()}** in your bank account (Max: ₲${maxBank.toLocaleString()}). The rest remains in your cash.`
                             )
                         ],
                         flags: ["Ephemeral"],
@@ -119,17 +119,17 @@ export default {
 
             const embed = MessageTemplates.SUCCESS.DATA_UPDATED(
                 "deposit",
-                `You successfully deposited **$${depositAmount.toLocaleString()}** into your bank.`
+                `You successfully deposited **₲${depositAmount.toLocaleString()}** into your bank.`
             )
                 .addFields(
                     {
                         name: "💵 New Cash Balance",
-                        value: `$${userData.wallet.toLocaleString()}`,
+                        value: `₲${userData.wallet.toLocaleString()}`,
                         inline: true,
                     },
                     {
                         name: "🏦 New Bank Balance",
-                        value: `$${userData.bank.toLocaleString()} / $${maxBank.toLocaleString()}`,
+                        value: `₲${userData.bank.toLocaleString()} / ₲${maxBank.toLocaleString()}`,
                         inline: true,
                     },
                 );
